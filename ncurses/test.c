@@ -7,7 +7,7 @@ int main() {
 	WINDOW* win = newwin(LINES, COLS, 0, 0);
 
 	box(win, 0, 0);	
-	mvwprintw(win, 1, 1, "BOX TEST");
+	mvwprintw(win, LINES/2, (COLS/2)-6, "BOX TEST");
 
 	refresh();
 	wrefresh(win);
