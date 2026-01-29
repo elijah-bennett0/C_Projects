@@ -15,6 +15,17 @@ int main() {
 	getch();
 	endwin();
 
+	initscr();
+
+	WINDOW* win2 = newwin(LINES, COLS, 0, 0);
+	box(win2, 0, 0);
+
+	mvwprintw(win2, LINES/2, (COLS/2)-6, "SECOND TEST");
+	refresh();
+	wrefresh(win2);
+	getch();
+	endwin();
+
 	return 0;
 
 }
